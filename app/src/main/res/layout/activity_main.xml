@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/titulo"
+        android:textAlignment="gravity"
+        android:textColor="#05F38C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#102B24"
+        android:onClick="ingresarDato"
+        android:text="@string/ingresar"
+        android:textColor="#F1D208"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ListView
+        android:id="@+id/listNumeros"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#F584B0D8"
+        android:backgroundTintMode="add"
+        android:foregroundTint="#3CE416"
+        android:listSelector="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/mensaje"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="7"
+        android:minHeight="48dp"
+        android:textColor="#33A127"
+        android:textColorHint="#178BD8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:minHeight="32dp"
+        android:onClick="decimalOn"
+        android:text="@string/hDecimal"
+        android:textColor="#178BD8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swNegativo"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:minHeight="48dp"
+        android:onClick="negativoOn"
+        android:text="@string/hNegativo"
+        android:textColor="#178BD8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swDecimal"
+        tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

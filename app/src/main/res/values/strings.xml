@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ordenarLista</string>
+    <string name="titulo">Mi lista de numeros</string>
+    <string name="mensaje">Ingresa tu numero: </string>
+    <string name="ingresar">Ingresar</string>
+    <string name="siguiente">Aceptar</string>
+    <string name="noNum">Solo numeros</string>
+    <string name="negativo">Solo entero positivo</string>
+    <string name="decimal">Solo enteros</string>
+    <string name="arriba">Ordenar Ascendente</string>
+    <string name="abajo">Ordenar Descendente</string>
+    <string name="errorSinNum">No hay nada que agregar</string>
+    <string name="errorListaVacia">La lista esta vacia</string>
+    <string name="errorLongitud">Solo numeros de 5 digitos</string>
+    <string name="hNegativo">Negativo</string>
+    <string name="hDecimal">Decimal</string>
+</resources>
