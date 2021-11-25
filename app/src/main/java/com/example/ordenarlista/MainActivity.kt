@@ -13,10 +13,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val etNum = findViewById<EditText>(R.id.etNum)
-        etNum.setOnClickListener {
-        }
     }
+
     private fun checarNum(): Boolean{
         val etNum = findViewById<EditText>(R.id.etNum)
 
@@ -99,17 +97,33 @@ class MainActivity : AppCompatActivity() {
     fun decimalOn(view: View) {
         val etNum = findViewById<EditText>(R.id.etNum)
         val swNegativo = findViewById<SwitchCompat>(R.id.swNegativo)
-        etNum.inputType = 8194
-        swNegativo.setOnClickListener {
-            etNum.inputType = 12290
+        val swDecimal = findViewById<SwitchCompat>(R.id.swDecimal)
+        if(swDecimal.isChecked){
+            etNum.inputType = 8194
+            if(swNegativo.isChecked){
+                etNum.inputType = 12290
+            }
+        }else{
+            etNum.inputType = 2
+            if(swNegativo.isChecked){
+                etNum.inputType = 4098
+            }
         }
     }
     fun negativoOn(view: View) {
         val etNum = findViewById<EditText>(R.id.etNum)
+        val swNegativo = findViewById<SwitchCompat>(R.id.swNegativo)
         val swDecimal = findViewById<SwitchCompat>(R.id.swDecimal)
-        etNum.inputType = 4098
-        swDecimal.setOnClickListener {
-            etNum.inputType = 12290
+        if(swNegativo.isChecked){
+            etNum.inputType = 4098
+            if(swDecimal.isChecked){
+                etNum.inputType = 12290
+            }
+        }else{
+            etNum.inputType = 2
+            if(swDecimal.isChecked){
+                etNum.inputType = 8194
+            }
         }
     }
 }
