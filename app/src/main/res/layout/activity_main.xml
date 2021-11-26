@@ -70,8 +70,8 @@
         android:inputType="number"
         android:maxLength="7"
         android:minHeight="48dp"
-        android:textColor="#33A127"
-        android:textColorHint="#178BD8"
+        android:textColor="#C2DF33"
+        android:textColorHint="#99C2DF33"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.174"
@@ -88,7 +88,7 @@
         android:minHeight="32dp"
         android:onClick="decimalOn"
         android:text="@string/hDecimal"
-        android:textColor="#178BD8"
+        android:textColor="#C2DF33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,7 +100,7 @@
         android:minHeight="48dp"
         android:onClick="negativoOn"
         android:text="@string/hNegativo"
-        android:textColor="#178BD8"
+        android:textColor="#C2DF33"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swDecimal"
         tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
