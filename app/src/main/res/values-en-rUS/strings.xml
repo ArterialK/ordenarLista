@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ordenarLista</string>
+    <string name="titulo">My number list</string>
+    <string name="mensaje">Enter your number</string>
+    <string name="ingresar">Enter</string>
+    <string name="siguiente">Accept</string>
+    <string name="noNum">Only numbers</string>
+    <string name="negativo">Only positive integers</string>
+    <string name="decimal">Only integers</string>
+    <string name="arriba">Sort ascending</string>
+    <string name="abajo">Sort descending</string>
+    <string name="errorSinNum">Its empty</string>
+    <string name="errorListaVacia">The list is empty</string>
+    <string name="errorLongitud">Only 5 digits</string>
+    <string name="hNegativo">Negative</string>
+    <string name="hDecimal">Decimal</string>
+</resources>
